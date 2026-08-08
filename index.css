@@ -275,6 +275,10 @@ nav a:hover{
     color:#ffffff;
 }
 
+.project-card a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 #skills{
