@@ -8,7 +8,7 @@
 }
  
 body{
-    background:#080808;
+    background:#111111;
     overflow-x:hidden;
 }
  
@@ -29,7 +29,7 @@ nav{
     overflow-y:hidden;
     white-space:nowrap;
     scrollbar-width:none;
-    border-bottom:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(200,92,246,.25);
 }
 
 
@@ -52,7 +52,7 @@ nav a:hover{
  
 #home,
 #about,
-#projects,#skills,#plateforms{
+#projects,#skills,#Education,#contact{
     min-height:80vh;
     scroll-margin-top:70px;
     color:#fff;
@@ -91,12 +91,12 @@ nav a:hover{
     object-fit:cover;
     border-radius:35%;
     animation:float 4s ease-in-out infinite;
-    box-shadow:0 0 35px rgba(255,255,255,.16);
+    box-shadow:0 0 0 2px  rgba(200,92,246,.25);
     transition:.3s;
 }
 
 .img img:hover{
-    box-shadow:0 0 120px rgba(139,92,246,.28);
+    box-shadow:0 0 60px 10px rgba(200,92,246,.25);
 }
 
 @keyframes float{
@@ -156,7 +156,7 @@ nav a:hover{
 
 .logo img:hover{
     transform:translateY(-5px);
-    box-shadow:0 0 20px rgba(59,130,246,.35);
+    box-shadow:0 0 10px 8px rgba(200,92,246,.25);
 }
  
 .resume{
@@ -167,15 +167,16 @@ nav a:hover{
     width:120px;
     height:45px;
     text-decoration:none;
-    color:#111111;
-    background:#ffffff;
+    color:white;
+    background:#8B5CF6;
     border-radius:10px;
     transition:.3s;
+    box-shadow: 0 0 0 1px rgba(200,92,246,.25);
 }
 
 .resume:hover{
-    transform:translateY(-4px);
-    box-shadow:0 0 20px rgba(255,255,255,.20);
+   transform:translateY(-4px);
+    box-shadow:0 0 15px rgba(200,92,246,.25);
 }
 .intro{
     font-size: 50px;
@@ -191,10 +192,10 @@ nav a:hover{
 .container{
     max-width:1100px;
     width:100%;
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(200,92,246,.25);
     border-radius:30px;
     padding:50px 40px;
-    box-shadow:0 0 25px 1px rgba(255,255,255,.08);
+    box-shadow:0 0 12px 1px rgba(200,92,246,.25);
     animation:fadeInUp .8s ease;
 }
  
@@ -222,10 +223,10 @@ nav a:hover{
 .project-container{
     width:100%;
     max-width:1100px;
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(200,92,246,.25);
     border-radius:30px;
     padding:50px 40px;
-    box-shadow:0 0 25px 1px rgba(255,255,255,.08);
+    box-shadow:0 0 12px 1px rgba(200,92,246,.25);
 }
 
 .project-container h1{
@@ -244,16 +245,18 @@ nav a:hover{
 .project-card{
     flex:1 1 300px;
     max-width:340px;
-    background:#111111;
-    border-radius:15px;
+   background:#111111;
+    border:1px solid rgba(200,92,246,.25);
+    border-radius:20px;
     overflow:hidden;
-    box-shadow:0 5px 20px rgba(255,255,255,.08);
-    transition:.3s;
+    transition:transform .3s ease,
+    box-shadow .3s ease;
+    text-align:center;
 }
 
 .project-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 30px rgba(139,92,246,.18);
+     transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(200,92,246,.25)
 }
 
 .project-card img{
@@ -290,10 +293,10 @@ nav a:hover{
 .skillcontainer{
        width:100%;
     max-width:1100px;
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(200,92,246,.25);
     border-radius:30px;
     padding:50px 40px;
-    box-shadow:0 0 25px 1px rgba(255,255,255,.08);
+    box-shadow:0 0 12px 1px rgba(200,92,246,.25);
 }
 
 .skillcontainer h1{
@@ -327,7 +330,7 @@ nav a:hover{
 
 .simg img:hover{
     transform:scale(1.15);
-   box-shadow:0 0 20px rgba(59,130,246,.35);
+   box-shadow:0 0 20px rgba(200,92,246,.25);
 }
 
 
@@ -340,14 +343,15 @@ nav a:hover{
 .plateformscontainer{
     width:100%;
     max-width:1100px;
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(200,92,246,.25);
     border-radius:30px;
     padding:50px 40px;
-    box-shadow:0 0 25px 1px rgba(255,255,255,.08);
+    box-shadow:0 0 12px 1px rgba(200,92,246,.25);
 
 }
 
 .plateformscontainer h1{
+    color: white;
     text-align:center;
     font-size:clamp(32px,5vw,50px);
     margin-bottom:80px;
@@ -368,7 +372,7 @@ nav a:hover{
 
 .pimg img:hover{
     transform:scale(1.1);
-    box-shadow:0 0 20px rgba(59,130,246,.35);
+    box-shadow:0 0 20px rgba(200,92,246,.25);
 }
 
 .pimg img{
@@ -378,6 +382,178 @@ nav a:hover{
     transition:0.3s;
      border-radius:15px;
 }
+
+
+
+
+
+
+#Education{
+    display:flex;
+    justify-content:center;
+    padding:30px 30px;
+}
+
+.education-container{
+    width:100%;
+    max-width:1100px;
+    border:1px solid rgba(200,92,246,.25);
+    border-radius:30px;
+    padding:50px 40px;
+    box-shadow:0 0 12px 1px rgba(200,92,246,.25);
+}
+
+.education-container h1{
+    text-align:center;
+    font-size:clamp(32px,5vw,50px);
+    margin-bottom:55px;
+}
+
+ 
+
+.insideedu{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+ 
+
+.edu-card{
+    flex:1 1 300px;
+    max-width:340px;
+    min-height:430px;
+    background:#111111;
+    border:1px solid rgba(200,92,246,.25);
+    border-radius:20px;
+    overflow:hidden;
+    transition:transform .3s ease,
+    box-shadow .3s ease;
+    text-align:center;
+}
+
+ 
+
+.edu-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(200,92,246,.25);
+}
+
+ 
+
+.common{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+ 
+
+.common img{
+    width:100%;
+    height:120px;
+    object-fit:contain;
+    padding:10px;
+}
+ 
+
+.common h4{
+    font-size:21px;
+    margin-top:18px;
+    margin-bottom:5px;
+    color:#ffffff;
+}
+ 
+
+.common p{
+    font-size:17px;
+    color:#cfcfcf;
+    margin:6px 10px;
+    line-height:1.5;
+}
+
+ 
+
+.common p:last-child{
+    color:#8B5CF6;
+    font-weight:bold;
+    font-size:18px;
+}
+
+
+
+
+
+
+#contact{
+    display:flex;
+    justify-content:center;
+    padding:30px 30px;
+}
+
+#contact-container{
+    text-align: center;
+    width:100%;
+    max-width:1100px;
+    border:1px solid rgba(200,92,246,.25);
+    border-radius:30px;
+    padding:50px 40px;
+    box-shadow:0 0 12px 1px rgba(200,92,246,.25);
+}
+
+#contact-container h1{
+    color:white; 
+    font-size:clamp(32px,5vw,50px);
+    margin-bottom:50px;
+}
+
+.insidecontact{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    max-width:700px;
+    margin:auto;
+}
+
+.insidecontact input,
+.insidecontact textarea{
+    width:100%;
+    padding:16px 18px;
+    border:1px solid rgba(200,92,246,.4);
+    border-radius:12px;
+    background:#111111;
+    color:white;
+    font-size:16px;
+}
+
+.insidecontact textarea{
+    height:160px;
+}
+
+
+
+#contact-container button{
+    margin:25px auto 0;
+    padding:14px 35px;
+    border:none;
+    border-radius:10px;
+    background:#8B5CF6;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#contact-container button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 15px rgba(200,92,246,.25);
+}
+
+
+
+
+
 
 
 footer{
@@ -401,9 +577,9 @@ footer{
     justify-content:space-between;
     align-items:center;
     padding:20px 30px;
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(200,92,246,.25);
     border-radius:30px;
-    box-shadow:0 0 25px rgba(255,255,255,.25);
+    box-shadow:0 0 12px rgba(200,92,246,.25);
     flex-wrap:wrap;
     gap:15px;
 }
@@ -517,6 +693,27 @@ footer{
 
     .project-card{
         max-width:100%;
+    }
+}
+@media (max-width: 400px) {
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        padding: 10px 8px;
+        overflow: hidden;
+        white-space: normal;
+    }
+
+    nav a {
+        flex: 0 0 auto;
+        font-size: 13px;
+        padding: 4px 0;
+        white-space: nowrap;
     }
 }
 
