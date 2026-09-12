@@ -13,17 +13,7 @@ a{
 }
 
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding: 10px 40px;
-}
 
-.navbar .logo{
-    font-size: 30px;
-    font-weight: 700;
-}
 
 
 ul{
